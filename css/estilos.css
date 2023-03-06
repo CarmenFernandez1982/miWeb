@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.index{
+    background-image: url(../imagenes/amanecer1.png);
+}
+.fondoClaro{
+    background-color: #E2CD9F;
+}
+.nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+    gap: 20px;
+    grid-template-areas:
+    "titulo1"
+    "contenedorA"
+    "visionMision";
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagenes/logo.png);
+    background-size: cover;
+    margin: 1rem;
+}
+.titulo1{
+    grid-area:titulo1;
+    width: 100vh;
+    height: 60px;
+    text-align: center;
+}
+.visionMision{
+    width: 1350px;
+    height: 760px;
+    background-image: url(../imagenes/vistaBkk.png);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 90vh;
+    align-content: space-around;
+    grid-template-areas: 
+    "titulo2 titulo2"
+    "vision mision";
+}
+.titulo2{
+    grid-area:titulo2;
+    width: 100vh;
+    height: 60px;
+    text-align: center;
+    padding: 50px;
+}
+.vision{
+    grid-area: vision;
+    width: 50vh;
+    height: 70vh;
+    padding: 50px;
+}
+.mision{
+    grid-area: mision;
+    width: 50vh;
+    height: 70vh;
+    padding: 50px;
+}
+.contacto{
+    background-color: #E2CD9F;
+}
+.dondeEstamos{
+    background-color: #F4F1ED;
+}
+.laCasa{
+    background-color: #F4F1ED;
+}
+.titulo{
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+    font-size: 100px;
+    text-align: center;
+    color: #EF8734;
+    margin-bottom: 0px;
+}
+.subTitulo{
+    font-family: 'Arizonia', cursive;
+    font-weight: lighter;
+    font-size: 80px;
+    text-align: center;
+    color: #EF8734;
+    margin-top: 0px;
+}
+h2{
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+    color:#EF8734;
+    font-size: 50px;
+}
+h3{
+    font-family: 'Arizonia', cursive;
+    font-weight: lighter;
+    color:#EF8734;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #EF8734;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    width: 90%;
+    margin: 2rem;
+    display:flex;
+}
+.menu{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #EF8734;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.menu li a:hover{
+    color: black;
+    background-color: #F4F1ED;
+    padding: 10px;
+    border-radius: 20px;
+}
+.formulario{
+    background-color: #E2CD9F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #EF8734;
+}
+.infoContacto{
+    background-color: #623E2A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: #F4F1ED;
+}
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #EF8734;
+}
+.contenedorA{
+    grid-area: contenedorA;
+    width: 100vh;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+.foto1{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagenes/vilmaYericpng.png);
+    background-size: cover;
+}
+.foto2{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagenes/rut.png);
+    background-size: cover;
+}
+.foto3{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagenes/carmen.png);
+    background-size: cover;
+}
+.pieFoto{
+    width: 400px;
+    height: 400px;
+    padding: 50px;
+}
+.casa{
+    width: 200px;
+    height: 300px;
+    background-image: url(../imagenes/casa.jpeg);
+    background-size: cover;
+}
+.habitacion{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagenes/habitacion.jpeg);
+    background-size: cover;
+    display: inline-block;
+}
+.habitacionDoble{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagenes/habitacionDoble.jpeg);
+    background-size: cover;
+    display: inline-block;
+}
+.cosina{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagenes/cosina.jpeg);
+    background-size: cover;
+    display: inline-block;
+}
+.mapa{
+    width: 100px;
+    height: 100px;
+    background-image: url(../imagenes/mapa.jpeg);
+    background-size: cover;
+}
+.pie{
+    grid-area: pie;
+    background-color: #eba266;
+    width: 1350px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 10% 15% 50% 25%;
+    align-items: center;
+}
+.pie h2{
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+    color: #F4F1ED;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.pie h3{
+    font-family: 'Arizonia', cursive;
+    font-weight: lighter;
+    color: #F4F1ED;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.logoPequeno{
+    width: 150px;
+    height: 150px;
+    background-image: url(../imagenes/logo.png);
+    background-size: cover;
+}
+
+/* Estilos de texto
+font-family: 'Aboreto', cursive;
+font-family: 'Arizonia', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Roboto', sans-serif; */
