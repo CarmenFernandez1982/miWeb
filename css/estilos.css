@@ -20,7 +20,7 @@
     "visionMision";
 }
 .logo{
-    width: 200px;
+    width: 250px;
     height: 200px;
     background-image: url(../imagenes/logo.png);
     background-size: cover;
@@ -38,8 +38,6 @@ nav{
     display:flex;
 }
 .menu{
-    list-style-type: none;
-    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: #EF8734;
     display: flex;
@@ -117,7 +115,7 @@ nav{
       "section2 section2 section2"
       "pie pie pie";
   }
-  .header {
+  header {
       grid-area: header;
       display: flex;
   }
@@ -151,7 +149,7 @@ nav{
     justify-self: center;
 }
 
-  .section2 {
+.section2 {
       grid-area: section2;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -164,7 +162,7 @@ nav{
           "habitacion habitacionDoble cosina"
           "description1 description2 description3";
   }
-  .tituloB { 
+.tituloB { 
     grid-area: tituloB; 
     justify-self: center;
   }
@@ -256,6 +254,7 @@ h2{
     font-weight: lighter;
     color:#EF8734;
     font-size: 50px;
+    text-align: center;
 }
 h3{
     font-family: 'Arizonia', cursive;
@@ -265,7 +264,8 @@ h3{
 h4{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
-    color: #EF8734;
+    color: azure;
+    padding-left: 100px;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -276,7 +276,35 @@ p{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     color: #EF8734;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tituloFormulario tituloFormulario tituloFormulario"
+      "aside1 cuestionario aside2"
+      "aside1 cuestionario aside2"
+      "aside1 cuestionario aside2"
+      "aside1 cuestionario aside2"
+      "aside1 cuestionario aside2";
+  }
+  
+.tituloFormulario { 
+    grid-area: tituloFormulario; 
 }
+.cuestionario { 
+    grid-area: cuestionario; 
+}
+  
+.aside1 { 
+    grid-area: aside1; 
+}
+  
+.aside2 { 
+    grid-area: aside2; 
+}
+  
 .infoContacto{
     background-color: #623E2A;
     font-family: 'Roboto', sans-serif;

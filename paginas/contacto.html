@@ -4,27 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" href="./imagenes/favicon_io/favicon.ico">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arizonia&family=Cinzel:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arizonia&family=Cinzel:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap"
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css"> 
     <title>Un nuevo corazón Contacto</title>
 </head>
 <body class="contacto">
     <header>
-        <nav>
-            <div class="logo"></div>
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="nosotros.html">Sobre norotros</a></li>
-                <li><a href="laCasa.html">La casa</a></li>
-                <li><a href="contacto.html">Dejanos tu mensaje</a></li>
-                <li><a href="dondeEstamos.html">Donde estamos</a></li>
-            </ul>
-        </nav> 
+        <div class="logo"></div>
+        <nav class=" menu navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Sobre norotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="laCasa.html">La casa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Dejanos tu mensaje</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dondeEstamos.html">Donde estamos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          </nav>
     </header>
     <main>
         <section class="formulario">
+            <div class="tituloFormulario">
+                <h2>Dejanos tu mensaje</h2>
+                <h4>
+                    Tenes preguntas o queres saber mas sobre la casa? Queremos conocerte. Dejanos tus datos aca.
+                </h4>
+            </div>
+            <div class="cuestionario">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo electronico</label>
+                    <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="pais" class="form-label">Pais de origen</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona un pais</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="peru">Peru</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="genero" class="form-label">Soy:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="hombre">
+                        <label class="form-check-label" for="inlineRadio1">Hombre</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="mujer">
+                        <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                    <button class="btn btn-primary" type="reset">Reset</button>
+                </div>
+            </div>
+            <div class="aside1"></div>
+            <div class="aside2"></div>
+        </section>
+       
+
+        <!-- <section class="formulario">
             <h1>Dejanos tu mensaje</h1>
             <p>
                 Tenes preguntas o queres saber mas sobre la casa? Queremos conocerte. Dejanos tus datos aca.
@@ -80,9 +156,9 @@
                     </div>
                 </form>
             </fieldset>
-        </section>
+        </section> -->
         <section class="infoContacto">
-            <h1>Contactos</h1>
+            <h2>Contactos</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, molestias hic similique nemo illum voluptate temporibus facilis, praesentium tempora quod architecto tenetur nam delectus consequatur eaque illo, nulla at adipisci.</p>
         </section>
     </main>
@@ -102,5 +178,6 @@
             <h3>Organizacion 3</h3>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
